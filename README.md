@@ -27,11 +27,5 @@ Resume Analyzer is a full-stack web application that allows users to securely up
 - **Backend:** Flask + Supabase (Authentication & File Storage)  
 - **AI Integration:** Gemini API (Natural Language Processing for resume analysis)  
 
----
 
-## Installation & Setup
 
-### Backend
-1. Navigate to the `backend` folder:
-   ```bash
-   cd backend
