@@ -1,0 +1,146 @@
+/* Full page centering */
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #e0f0ff, #f0f2f5);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container */
+.container {
+  width: 120%;          /* almost full width of viewport */
+  max-width: 900px;    /* bigger max-width */
+  max-height: 100px;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Card */
+.card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 40px 30px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  text-align: left;
+  word-break: break-word;
+  white-space: pre-wrap;
+  box-sizing: border-box;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 800;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+/* Inputs */
+.input-field {
+  display: block;
+  width: 90%;
+  padding: 14px 15px;
+  margin: 12px 0;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.input-field:focus {
+  border-color: #4A90E2;
+  box-shadow: 0 0 5px rgba(74,144,226,0.5);
+  outline: none;
+}
+
+/* Buttons */
+.btn-primary {
+  width: 100%;
+  padding: 14px;
+  border-radius: 10px;
+  border: none;
+  background-color: #4A90E2;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #357ABD;
+  transform: translateY(-2px);
+}
+
+.toggle-text {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+.toggle-text span {
+  color: #4A90E2;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.toggle-text span:hover {
+  color: #1a5bb8;
+}
+
+/* Upload card */
+.upload-card {
+  padding: 30px 20px;
+  margin-top: 20px;
+  text-align: center;
+  max-height: 80vh;   /* limit height */
+  overflow-y: auto;   /* scroll inside if content too long */
+  box-sizing: border-box;
+}
+
+/* Analysis wrapper for scroll */
+.analysis-card-wrapper {
+  max-height: 400px; /* or suitable height */
+  overflow-y: auto;
+  margin-top: 20px;
+}
+
+/* Analysis card */
+.analysis-card {
+  background: #f9f9f9;
+  border: 1px solid #eee;
+  border-radius: 15px;
+  padding: 25px 20px;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: left;
+  font-family: 'Times New Roman', Times, serif;
+  line-height: 1.6;
+  font-size: 16px;
+  color: #333;
+}
+
+.analysis-card h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #222;
+}
+
+.analysis-card pre {
+  white-space: pre-wrap;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
